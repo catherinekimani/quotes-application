@@ -11,3 +11,10 @@ body{
     background-repeat: no-repeat;
     height: 80vh;
 }
+
+/* heading */
+h1{
+    font-style: italic;
+    font-size: 5rem;
+    color: #0000A3;
+}
