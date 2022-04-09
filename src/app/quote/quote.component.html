@@ -1,1 +1,19 @@
-<p>quote works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mycards">
+                <div class="card" *ngFor="let quote of quotes; let i=index" class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2> {{quote.title}}</h2>
+                            <h6>{{quote.quote}}</h6>
+                            <p> {{quote.author}} </p> <br>
+                            <button class="btn btn-success">{{quote.upvotes}}</button>
+                            <button class="btn btn-danger m-5">{{quote.downvotes}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
