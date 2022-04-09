@@ -1,0 +1,15 @@
+.card{
+    margin-bottom: 5%;
+    background-color: rgba(245, 116, 42, 0.356);
+    opacity: 0.9;
+    color: #08080aee;
+    font-size: 20px;
+    margin-left: 15%;
+    
+}
+
+.card p {
+    font-style: italic;
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+}
