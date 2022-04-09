@@ -16,7 +16,11 @@ body{
 h1{
     color: rgb(212, 97, 142);
     text-align: center;
+    padding-left: 20%;
     margin: 3%;
     font-style: italic;
     font-size: 4rem;
 }
+ span{
+     color: blue;
+ }
