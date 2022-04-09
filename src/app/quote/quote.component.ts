@@ -13,12 +13,11 @@ export class QuoteComponent implements OnInit {
     new Quote(3, "Tech", "With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.", " By: Nikas Nganga", 0, 0),
     new Quote(4, "Tech", "With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.", "By: Benard Kimani", 0, 0),
   ];
-  quote: any;
 
-  addNewQuote(quote:any) {
-    let quoteLength = this.quote.length;
+  addNewQuote(quote:Quote) {
+    let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
-    this.quote.push(quote)
+    this.quotes.push(quote)
   }
   
   deleteQuote(isComplete:boolean, index:number){

@@ -16,12 +16,3 @@
 }
 
 
-.mycards{
-    display: flex;
-    justify-content: space-around;
-    width: 80rem;
-    margin-left:-25%;
-    margin-bottom: 5%;
-    justify-content: space-between;
-    height: 65vh;
-}

@@ -1,8 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <div class="mycards">
-                <div class="card" *ngFor="let quote of quotes; let i=index" class="card">
+                <div class="card" *ngFor="let quote of quotes; let i=index">
                     <div class="card-body">
                         <div class="card-title">
                             <h2> {{quote.title}}</h2>
@@ -17,7 +16,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
         <div class="col-md-6">
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
