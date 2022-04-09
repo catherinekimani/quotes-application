@@ -1,0 +1,30 @@
+.container-fluid h3{
+    color: aqua;
+}
+.container-fluid{
+    width: 55%;
+    height: 88vh;
+    background-color: blue;
+    opacity: 0.5;
+    margin-left: 75%;
+    margin-top: -15%;
+}
+
+label {
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+    color: chartreuse;
+    font-weight: bold;
+}
+
+input{
+    margin-bottom: 10%;
+}
+
+#quote{
+    height: 30vh;
+}
+
+.alert-danger{
+    background-color: red;
+}
