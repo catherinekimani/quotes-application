@@ -9,12 +9,12 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 200vh;
+    height: auto;
 }
 
 /* heading */
 h1{
     font-style: italic;
     font-size: 5rem;
-    color: #0000A3;
+    color: #7d7df0;
 }
