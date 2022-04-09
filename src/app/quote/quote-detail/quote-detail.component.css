@@ -1,0 +1,7 @@
+/* delete button styling */
+.btnDelete{
+    margin-left: 70%;
+    border-radius: 25px;
+    width: 20%;
+    margin-top: -40%;
+}

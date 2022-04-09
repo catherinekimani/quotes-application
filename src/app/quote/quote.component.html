@@ -10,6 +10,10 @@
                             <p> {{quote.author}} </p> <br>
                             <button class="btn btn-success">{{quote.upvotes}}</button>
                             <button class="btn btn-danger m-5">{{quote.downvotes}}</button>
+                            <!-- quote-detail component -->
+                            <div *ngIf="quote.quote">
+                                <app-quote-detail (isComplete)="deleteQuote($event,i)"></app-quote-detail>
+                            </div>
                         </div>
                     </div>
                 </div>

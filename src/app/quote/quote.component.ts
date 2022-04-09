@@ -13,7 +13,16 @@ export class QuoteComponent implements OnInit {
     new Quote(3, "Tech", "With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.", " By: Nikas Nganga", 0, 0),
     new Quote(4, "Tech", "With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.", "By: Benard Kimani", 0, 0),
   ];
+  quote: any;
+  deleteQuote(isComplete:boolean, index:number){
+    if (isComplete) {
+      let toDelete = confirm("Are you sure you want to delete this Quote?")
 
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {
