@@ -14,7 +14,9 @@ body{
 
 /* heading */
 h1{
+    color: rgb(212, 97, 142);
+    text-align: center;
+    margin: 3%;
     font-style: italic;
-    font-size: 5rem;
-    color: #7d7df0;
+    font-size: 4rem;
 }

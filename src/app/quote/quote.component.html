@@ -8,8 +8,8 @@
                             <h2> {{quote.title}}</h2>
                             <h6>{{quote.quote}}</h6>
                             <p> {{quote.author}} </p> <br>
-                            <button class="btn btn-success">{{quote.upvotes}}</button>
-                            <button class="btn btn-danger m-5">{{quote.downvotes}}</button>
+                            <button class="btn btn-success mt-8">{{quote.upvotes}}</button>
+                            <button class="btn btn-danger m-5 mt-5">{{quote.downvotes}}</button>
                             <!-- quote-detail component -->
                             <div *ngIf="quote.quote">
                                 <app-quote-detail (isComplete)="deleteQuote($event,i)"></app-quote-detail>
