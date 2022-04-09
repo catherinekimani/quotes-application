@@ -10,8 +10,8 @@ export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(1, "Tech", "With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content..", "By: Catherine Kimani", 0, 0),
     new Quote(2, "Tech", "With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.", " By: Diana Kariuki", 0, 0),
-    new Quote(3, "Tech", "With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.", " By: Nikas Nganga", 0, 0),
-    new Quote(4, "Tech", "With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.", "By: Benard Kimani", 0, 0),
+    new Quote(3, "Tech", "With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.", " By: Nikas Nganga", 0, 0),
+    new Quote(4, "Tech", "With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.", "By: Benard Kimani", 0, 0),
   ];
   quote: any;
 

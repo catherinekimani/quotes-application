@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <h3 class="text-center"> Add a New Quote </h3>
     <hr>
-    <form action="" (ngSubmit)="submitQuote" #quoteForm="ngForm">
+    <form action="" (ngSubmit)="submitQuote(quoteForm.value)" #quoteForm="ngForm">
         <div class="form-group">
             <label for="title"> QuoteTitle: </label>
             <input type="text" class="form-control" id="title" placeholder="Your title" [(ngModel)]="newQuote.title"
