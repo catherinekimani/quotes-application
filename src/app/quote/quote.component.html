@@ -6,13 +6,19 @@
                         <div class="card-title">
                             <h3 class="text-dark"> {{quote.title}} Created on {{quote.date|date}}</h3>
                             <p> Posted {{quote.date|dateCount}} days ago </p>
-                            <h6>{{quote.quote}}</h6>
+                            <h6 appHighlight>{{quote.quote}}</h6>
                             <p> {{quote.author}} </p> <br>
                             <app-votes></app-votes>
                             <!-- quote-detail component -->
-                            <div *ngIf="quote.quote">
+                            <div *ngIf="quote.upvotes == highestNumber() && quote.upvotes > 0; then highlight; else empty;"></div> 
+                                <ng-template #empty>
+                                    <p>{{quote.quote}}</p>
+                                </ng-template>
+                                <ng-template #highlight>
+                                    <p>{{quote.quote}}</p>
+                                </ng-template>
+                                
                                 <app-quote-detail (isComplete)="deleteQuote($event,i)"></app-quote-detail>
-                            </div>
                         </div>
                     </div>
                 </div>
