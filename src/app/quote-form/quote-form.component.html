@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container">
     <h3 class="text-center"> Add a New Quote </h3>
     <hr>
     <form action="" (ngSubmit)="submitQuote()" #quoteForm="ngForm">
@@ -18,10 +18,12 @@
         </div>
         <div class="form-group">
             <label for="quote"> Quote: </label>
-            <input type="text" class="form-control" id="quote" [(ngModel)]="newQuote.quote"
-                name="quote" #quote="ngModel" required>
+            <textarea type="text" class="form-control" id="quote" [(ngModel)]="newQuote.quote"
+                name="quote" #quote="ngModel" required> </textarea>
             <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger"></div>
         </div>
-        <button type="submit" class="btn btn-success">Add Quote </button>
+        <div class="text-center">
+        <button type="submit" class="btn btn-success mb-5 mt-5">Add Quote </button>
+        </div>
     </form>
 </div>

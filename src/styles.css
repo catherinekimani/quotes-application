@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(../src/assets/quotes.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../src/assets/quotes.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

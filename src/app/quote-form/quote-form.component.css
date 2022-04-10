@@ -1,25 +1,18 @@
-.container-fluid h3{
+.container h3{
     color: rgb(245, 230, 241);
     text-decoration: double;
 }
-.container-fluid{
-    width: 55%;
-    height: 88vh;
-    background-color: #0000E0;
-    opacity: 0.5;
-    margin-left: 75%;
-    margin-top: -15%;
-}
 
+.container{
+    width: 80%;
+    background-color: #0000E0;
+    opacity: 0.7;
+}
 label {
     margin-bottom: 5%;
     font-size: 1.5rem;
     color: #ffffff;
     font-weight: bold;
-}
-
-input{
-    margin-bottom: 10%;
 }
 
 #quote{
