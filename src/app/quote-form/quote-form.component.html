@@ -18,7 +18,7 @@
         </div>
         <div class="form-group">
             <label for="quote"> Quote: </label>
-            <input type="text" class="form-control" id="quote" placeholder="Your Quote" [(ngModel)]="newQuote.quote"
+            <input type="text" class="form-control" id="quote" [(ngModel)]="newQuote.quote"
                 name="quote" #quote="ngModel" required>
             <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger"></div>
         </div>
