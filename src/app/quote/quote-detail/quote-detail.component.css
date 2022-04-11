@@ -1,3 +1,12 @@
+.author{
+    font-style: italic;
+    color: navy;
+    font-weight: bold;
+}
+
+.btn{
+    border-radius: 10px;
+}
 /* delete button styling */
 .btnDelete{
     margin-left: 32%;

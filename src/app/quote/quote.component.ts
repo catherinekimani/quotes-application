@@ -14,8 +14,21 @@ export class QuoteComponent implements OnInit {
     new Quote(4, "TechQuote", "Technology has made our world so much smaller, that we can now learn about other cultures or countries with ease thanks to Youtube videos and online news stories!”", "By: Benard Kimani", 0, 0, new Date(2022,1,11)),
   ];
 
-  arr: number[] = this.quotes.map((quote) => quote.upvotes);
-  highest = Math.max(...this.arr);
+  first!:number;
+    last!:number;
+    count!:number;
+
+    highestUpvote(){
+      this.first = 0
+      this.last = 0
+
+      for(this.count=0; this.count <this.quotes.length; this.count++){
+      this.last =this.quotes[this.count].upvotes;
+      if(this.last>this.first){this.first = this.last}
+    }
+    return this.first
+  }    
+   
 
   addNewQuote(quote:Quote) {
     let quoteLength = this.quotes.length;

@@ -9,10 +9,8 @@
     
 }
 
-.card p {
-    font-style: italic;
-    color: navy;
+.date{
+    color: #fa4343d5;
     font-weight: bold;
+    font-size: 20px;
 }
-
-
