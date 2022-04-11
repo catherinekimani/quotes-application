@@ -18,7 +18,7 @@
                                     <!-- <p>{{quote.quote}}</p> -->
                                 </ng-template>
                                 
-                                <app-quote-detail (isComplete)="deleteQuote($event,i)"></app-quote-detail>
+                                <app-quote-detail [quote]="quote" (isComplete)="deleteQuote($event,i)"></app-quote-detail>
                         </div>
                     </div>
                 </div>
