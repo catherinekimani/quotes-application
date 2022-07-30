@@ -2,7 +2,7 @@
 
 #### By Catherine Kimani
 
-![catherine](./src/assets/quotesPro.png)
+![catherine](./src/assets/quotes.png)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ##  Table of Content
