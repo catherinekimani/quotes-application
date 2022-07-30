@@ -1,16 +1,10 @@
-.card{
-    margin-bottom: 5%;
-    background-color: rgb(243, 243, 243);
-    opacity: 0.6;
-    color: black;
-    font-size: 20px;
-    margin-left: 15%;
-    margin: 1%;
-    
+.card1{
+    width: 400px;
+    box-shadow:2px 7px 8px rgba(0,0,0,.3);
+    border-radius:3px;
+    background-color: transparent;
 }
-
-.date{
-    color: #fa4343d5;
-    font-weight: bold;
-    font-size: 20px;
+a{
+    list-style-type: none;
+    text-decoration: none;
 }

@@ -1,24 +1,30 @@
-.container h3{
-    color: rgb(245, 230, 241);
-    text-decoration: double;
+form{
+    width:600px;
+    background: rgba(0, 7, 36, 0.909);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:1rem;
+    padding:3rem;
+    box-shadow:2px 7px 8px rgba(0,0,0,.3);
+    border-radius:3px;
+    color:white;
 }
 
-.container{
-    width: 80%;
-    background-color: #0000E0;
-    opacity: 0.7;
+.input-field input {
+    width:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    color: grey;
+    border-bottom:1px solid #9D6C1B;
+    padding:.1rem;
 }
-label {
-    margin-bottom: 5%;
-    font-size: 1.5rem;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-#quote{
-    height: 30vh;
+.input-field input:focus {
+    border-color: #DB9314;
 }
 
-.alert-danger{
-    background-color: red;
+.input {
+    display:flex;
+    font-size:.9rem;
 }

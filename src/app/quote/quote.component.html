@@ -1,23 +1,20 @@
 <div class="container">
+  <app-logo-component></app-logo-component>
   <div class="row">
-    <div class="col-md-6">
-      <div class="card" *ngFor="let quote of quotes; let i = index">
+<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    <div class="card1 col-md-4 mb-5 mx-3"*ngFor="let quote of quotes; let i = index">
         <!-- apphighlight -->
         <div appHighlight *ngIf="highestUpvote() === quote.upvotes && quote.upvotes > 0"> <p>{{quote.quote}}</div>
-        <div class="card-body">
+        <div class="card-body text-light">
           <div class="card-title">
-            <h3 class="text-dark"> {{ quote.title }} Created on {{ quote.date | date }} </h3>
-            <p class="date">Posted {{ quote.date | dateCount }} days ago</p>
-            <h6>{{ quote.quote }}</h6> <br />
+            <h6 class="text-light"> {{ quote.title }} Created on {{ quote.date | date }} </h6>
+            <p class="text-danger">Posted {{ quote.date | dateCount }} days ago</p>
+            <p class="text-light">{{ quote.quote }}</p>
             <!-- quote detail -->
             <app-quote-detail [quote]="quote" (isComplete)="deleteQuote($event, i)"></app-quote-detail>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- form -->
-    <div class="col-md-6">
-      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
   </div>
+
 </div>

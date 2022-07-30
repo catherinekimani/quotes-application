@@ -1,16 +1,57 @@
-.author{
-    font-style: italic;
-    color: navy;
-    font-weight: bold;
+
+
+/*  Change this if you want :3 */
+:root {
+	--LIGTH_COLOR: #f2efea;
+	--DARK_COLOR: #cbbcb1;
 }
 
-.btn{
-    border-radius: 10px;
+/* This style is for make pen looks better */
+.center {
+	position: absolute;
+	top: 50%;
+	left: 45%;
 }
-/* delete button styling */
-.btnDelete{
-    margin-left: 32%;
-    border-radius: 25px;
-    width: 25%;
-    margin-top: -5%;
+.like:hover{
+    background: rgb(50, 40, 239);
+}
+.dislike:hover{
+	background: red;
+}
+/* Remove default button styles */
+.container button {
+	background-color: none;
+	border: 0px;
+	padding: 5px;
+	transition: transform 0.2s; /* Animation */
+}
+.container button:hover {
+	cursor: pointer;
+	transform: scale(1.2); /* Animation*/
+}
+.container button:focus {
+	background-color: var(--DARK_COLOR);
+	outline: none;
+	border: 0px;
+}
+
+/* The container of the buttons */
+.container {
+	display: inline-flex;
+	transform: scale(3);
+	background-color: var(--LIGTH_COLOR);
+	border: 2px solid var(--DARK_COLOR);
+	border-radius: 2px;
+	padding: 5px;
+}
+/* The numbers */
+#pLikes,
+#pDisLikes {
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+}
+.delete{
+	background-color: black;
+	color: white;
 }

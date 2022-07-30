@@ -1,15 +1,14 @@
 <!-- author -->
 <p class="author"> {{quote.author}} </p>
 <!-- upvotes and downvotes -->
-<div class="d-flex justify-content-around mb-4">
-    <div class="d-flex">
-        <button class="btn btn-success me-4" (click)="upvotes()">Likes</button>
-        <p class="fs-3">{{quote.upvotes}}</p>
+
+<div class="d-flex justify-content-evenly">
+    <div class="">
+        <button class="btn-sm like" (click)="upvotes()"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>{{quote.upvotes}}</button>
     </div>
-    <div class="d-flex">
-        <button class="btn btn-danger me-4" (click)="downvotes()">Dislikes</button>
-        <p class="fs-3"> {{quote.downvotes}}</p>
+    <div class="">
+        <button class="btn-sm dislike" label="decline" (click)="downvotes()"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i>{{quote.downvotes}}</button>
     </div>
-</div>
 <!-- delete button -->
-<button class="btnDelete btn-dark" (click)="deleteQuote(true)"> Delete </button>
+<button class="btnDelete delete btn-sm" (click)="deleteQuote(true)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+</div>

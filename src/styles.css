@@ -4,23 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../src/assets/quotes.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: auto;
-}
 
-/* heading */
-h1{
-    color: rgb(212, 97, 142);
-    text-align: center;
-    padding-left: 20%;
-    margin: 3%;
-    font-style: italic;
-    font-size: 4rem;
+body{
+    background-color: rgba(0, 7, 36, 0.909);
+    font-family: 'Times New Roman', Times, serif;
 }
- span{
-     color: blue;
- }
+/* rgba(0, 7, 36, 0.795) */
